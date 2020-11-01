@@ -39,10 +39,12 @@ function loadScene(){
 	var material = new THREE.MeshBasicMaterial({color:'yellow', wireframe:true});
 
 	//Geometrias
+	var geocubo = new THREE.BoxGeometry(2,2,2);
 
 
 	//Objetos
 	var cubo = new THREE.Mesh(geocubo, material);
+	//Orden por defecto de las tranformaciones: 1º escalado, 2º rotacion  y 3º traslacion. Escrito TRS en notación
 	cubo.rotation.y = Math.PI/4;
 	cubo.position.x = -1;
 
